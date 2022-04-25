@@ -1,8 +1,14 @@
+#include<stdio.h>
+#include<iostream>
+#include<utility>
+#include<vector>
+using namespace std;
 #include <stdio.h>
-int main()
-{
-    int a = 1;
-    int b = 2;
-    printf("%d", a+b);
-    return 0;
+
+typedef vector<int> vi;
+
+int main(){
+    vi v;
+    v = {1,2,3,4,5,6,7,8,9};
+    cout << v[7] << endl;
 }
