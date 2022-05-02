@@ -45,3 +45,25 @@ int main() {
 
     return 0;
 }
+
+
+void dfs(int r, int c, int AdjMatrix[][], int dfs_num[][])
+{
+    dfs_num[r][c] = VISITED;
+    if (AdjMatrix[r + 1][c] == 1 && dfs_num[r + 1][c] == UNVISITED)
+    {
+        dfs(r + 1, c);
+    }
+    if (AdjMatrix[r - 1][c] == 1 && dfs_num[r - 1][c] == UNVISITED)
+    {
+        dfs(r - 1, c);
+    }
+    if (AdjMatrix[r][c + 1] == 1 && dfs_num[r][c + 1] == UNVISITED)
+    {
+        dfs(r, c + 1);
+    }
+    if (AdjMatrix[r][c - 1] == 1 && dfs_num[r][c - 1] == UNVISITED)
+    {
+        dfs(r, c - 1);
+    }
+}
