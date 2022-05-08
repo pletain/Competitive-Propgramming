@@ -6,6 +6,8 @@ using namespace std;
 typedef pair<int> ii;
 typedef vector<int> vi;
 
+int dr[] = {2,}
+
 int main() {
     int T, L;
     cin >> T;
